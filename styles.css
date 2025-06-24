@@ -1,24 +1,24 @@
 @font-face {
     font-family: mediumMontserrat;
-    src: url(/portfolio-gitpages/assets/fonts/Montserrat-Medium.ttf);
+    src: url(./assets/fonts/Montserrat-Medium.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: semiBoldMontserrat;
-    src: url(/portfolio-gitpages/assets/fonts/Montserrat-SemiBold.ttf);
+    src: url(./assets/fonts/Montserrat-SemiBold.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: BoldMontserrat;
-    src: url(/portfolio-gitpages/assets/fonts/Montserrat-Bold.ttf);
+    src: url(./assets/fonts/Montserrat-Bold.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: LightMontserrat;
-    src: url(/portfolio-gitpages/assets/fonts/Montserrat-Light.ttf);
+    src: url(./assets/fonts/Montserrat-Light.ttf);
     font-display: swap;
 }
 
