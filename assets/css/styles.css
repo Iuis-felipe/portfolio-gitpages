@@ -1,24 +1,24 @@
 @font-face {
     font-family: mediumMontserrat;
-    src: url(./assets/fonts/Montserrat-Medium.ttf);
+    src: url(/assets/fonts/Montserrat-Medium.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: semiBoldMontserrat;
-    src: url(./assets/fonts/Montserrat-SemiBold.ttf);
+    src: url(/assets/fonts/Montserrat-SemiBold.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: BoldMontserrat;
-    src: url(./assets/fonts/Montserrat-Bold.ttf);
+    src: url(/assets/fonts/Montserrat-Bold.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: LightMontserrat;
-    src: url(./assets/fonts/Montserrat-Light.ttf);
+    src: url(/assets/fonts/Montserrat-Light.ttf);
     font-display: swap;
 }
 
@@ -845,3 +845,365 @@ main {
 }
 
 /* --==FIM SECTION 4==-- */
+
+
+/* Estilos para a seção de Cadastro */
+#registration-section {
+    background-color: var(--main-cream);
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+#registration-section .section-wrapper {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    padding: 80px 6%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#registration-section .sec-txt {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#registration-section .sec-txt span {
+    color: var(--main-orange);
+    font-family: BoldMontserrat;
+    font-size: 24px;
+}
+
+#registration-section .sec-txt h2 {
+    font-size: var(--font-h2);
+    font-family: BoldMontserrat;
+    max-width: 770px;
+    line-height: 48px;
+    color: var(--darker-blue);
+}
+
+.registration-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--main-orange);
+    box-sizing: border-box;
+    box-shadow: 8px 8px 0px var(--darker-blue);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.registration-image-placeholder {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--darker-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.registration-image-placeholder img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.registration-form-content {
+    flex: 1.5;
+    min-width: 320px;
+    background-color: var(--darker-blue);
+    padding: 40px;
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: mediumMontserrat;
+}
+
+.registration-form-content form .form-group {
+    margin-bottom: 25px;
+}
+
+.registration-form-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-family: semiBoldMontserrat;
+    color: var(--main-cream);
+}
+
+.registration-form-content input[type="text"],
+.registration-form-content input[type="email"],
+.registration-form-content input[type="password"],
+.registration-form-content textarea,
+.registration-form-content select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--main-orange);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: mediumMontserrat;
+    border-radius: 4px;
+}
+
+.registration-form-content input[type="text"]::placeholder,
+.registration-form-content input[type="email"]::placeholder,
+.registration-form-content input[type="password"]::placeholder,
+.registration-form-content textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.registration-form-content textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.registration-form-content .radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.registration-form-content .radio-group input[type="radio"] {
+    display: none;
+}
+
+.registration-form-content .radio-group label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.registration-form-content .radio-group label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--main-orange);
+    border-radius: 50%;
+    background-color: var(--darker-blue);
+    transition: all 0.2s ease;
+}
+
+.registration-form-content .radio-group input[type="radio"]:checked+label::before {
+    background-color: var(--main-orange);
+    border-color: var(--main-cream);
+}
+
+.registration-form-content .radio-group input[type="radio"]:checked+label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--main-cream);
+    opacity: 1;
+}
+
+/* Estilos para Select */
+.registration-form-content select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23fff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    padding-right: 40px;
+}
+
+.registration-form-content select option {
+    background-color: var(--darker-blue);
+    color: var(--white);
+}
+
+.registration-form-content button[type="submit"] {
+    width: 100%;
+    padding: 15px 20px;
+    background-color: var(--main-orange);
+    color: var(--darker-blue);
+    border: none;
+    font-size: 20px;
+    font-family: BoldMontserrat;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.registration-form-content button[type="submit"]:hover {
+    background-color: var(--main-cream);
+    color: var(--main-orange);
+    box-shadow: 6px 6px 0px var(--darker-blue);
+}
+
+@media screen and (max-width: 900px) {
+    .registration-form-container {
+        flex-direction: column;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .registration-image-placeholder {
+        margin: 0;
+        min-height: 250px;
+        border-radius: 0;
+    }
+
+    .registration-form-content {
+        padding: 30px;
+        border-radius: 0;
+    }
+}
+
+/* --==INICIO SEÇÃO PROJETOS==-- */
+#projetos-section {
+  background-color: var(--darker-blue);
+  display: flex;
+  justify-content: center;
+  padding: 120px 0 80px 0; /* Adicionado padding-top para o header fixo */
+  width: 100%;
+}
+
+.projetos-wrapper {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 6%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projetos-titulo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projetos-titulo span {
+  color: var(--main-orange);
+  font-family: BoldMontserrat;
+  font-size: 24px;
+}
+
+.projetos-titulo h2 {
+  font-size: var(--font-h2);
+  font-family: BoldMontserrat;
+  color: var(--main-cream);
+}
+
+.projetos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.projeto-card {
+  background-color: var(--main-cream);
+  width: 380px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px #000;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projeto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-imagem {
+  width: 100%;
+  height: 225px; /* Altura fixa para todas as imagens */
+  overflow: hidden;
+}
+
+.projeto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+  transition: transform 0.4s ease;
+}
+
+.projeto-card:hover .projeto-imagem img {
+  transform: scale(1.05); /* Animação de zoom na imagem */
+}
+
+.projeto-info {
+  padding: 25px;
+  color: var(--darker-blue);
+}
+
+.projeto-info h3 {
+  font-family: BoldMontserrat;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.projeto-info p {
+  font-family: mediumMontserrat;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.projeto-tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.projeto-tags span {
+  background-color: var(--main-orange);
+  color: var(--darker-blue);
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-family: semiBoldMontserrat;
+  font-size: 0.8rem;
+}
+
+.projeto-links {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.projeto-btn {
+  font-family: mediumMontserrat;
+  color: var(--darker-blue);
+  border: solid 2px var(--darker-blue);
+  padding: 8px 20px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.projeto-btn:hover {
+  background-color: var(--main-orange);
+  border-color: var(--main-orange);
+  box-shadow: 4px 4px 0px #000;
+}
+
+
+/* Responsividade para a seção de projetos */
+@media screen and (max-width: 900px) {
+    .projeto-card {
+        width: 100%;
+        max-width: 450px; /* Limita a largura em telas médias */
+    }
+}
+/* --==FIM SEÇÃO PROJETOS==-- */
