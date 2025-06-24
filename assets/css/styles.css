@@ -1,24 +1,24 @@
 @font-face {
     font-family: mediumMontserrat;
-    src: url(/assets/fonts/Montserrat-Medium.ttf);
+    src: url(/portfolio-gitpages/assets/fonts/Montserrat-Medium.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: semiBoldMontserrat;
-    src: url(/assets/fonts/Montserrat-SemiBold.ttf);
+    src: url(/portfolio-gitpages/assets/fonts/Montserrat-SemiBold.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: BoldMontserrat;
-    src: url(/assets/fonts/Montserrat-Bold.ttf);
+    src: url(/portfolio-gitpages/assets/fonts/Montserrat-Bold.ttf);
     font-display: swap;
 }
 
 @font-face {
     font-family: LightMontserrat;
-    src: url(/assets/fonts/Montserrat-Light.ttf);
+    src: url(/portfolio-gitpages/assets/fonts/Montserrat-Light.ttf);
     font-display: swap;
 }
 
@@ -1117,7 +1117,7 @@ main {
   background-color: var(--main-cream);
   width: 380px;
   border-radius: 8px;
-  box-shadow: 4px 4px 0px #000;
+  box-shadow: 4px 4px 0px var(--main-orange);
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
